@@ -1,0 +1,12 @@
+@mixin navBg ($url,$left,$pLeft) {
+	font-size:14px;
+	display:inline-block;
+	width: 100%;
+	height: 16px;
+	line-height:16px;
+	background: $url;
+	margin-left:$left;
+	padding-left:$pLeft;
+}
+
+

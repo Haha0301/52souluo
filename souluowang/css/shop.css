@@ -1,0 +1,707 @@
+#wrap {
+  background: url(../image/shop/bg.png);
+  width: 100%;
+  height: 1545px; }
+
+#box {
+  max-width: 1220px;
+  background: #fff;
+  margin: 0 auto; }
+
+#top-box {
+  width: 95%;
+  margin: 0 auto;
+  padding-top: 20px; }
+
+#collapse {
+  z-index: 9999;
+  position: fixed;
+  right: -284.5px;
+  transition: 1s all ease; }
+  #collapse .toggle {
+    display: none;
+    width: 40px;
+    height: 39px;
+    background: #ea84ba;
+    position: absolute;
+    top: 55px;
+    left: -40px;
+    cursor: pointer;
+    opacity: 0.9; }
+    #collapse .toggle ul {
+      margin-top: 10px;
+      margin-left: 9px; }
+      #collapse .toggle ul li {
+        width: 22px;
+        height: 3px;
+        margin-bottom: 5px;
+        background: #fff; }
+  #collapse .collapse-nav {
+    width: 284.5px;
+    height: 528px;
+    background: #ea84ba;
+    opacity: 0.9; }
+    #collapse .collapse-nav ul {
+      margin: 0 8%; }
+      #collapse .collapse-nav ul li {
+        border-bottom: 1px solid #fff;
+        height: 52px;
+        line-height: 52px;
+        font-size: 16px; }
+        #collapse .collapse-nav ul li a {
+          color: #fff; }
+
+#collapse.active {
+  right: 0;
+  transition: 1s all ease; }
+
+header {
+  position: fixed;
+  width: 15.15%; }
+  header #logo .logo1 {
+    display: block;
+    margin-bottom: 10px; }
+    header #logo .logo1 img {
+      width: 100%; }
+  header #logo .logo2 {
+    display: block;
+    margin-bottom: 20px; }
+    header #logo .logo2 img {
+      width: 100%; }
+  header #nav ul {
+    margin-bottom: 20px; }
+    header #nav ul li {
+      border-bottom: 1px solid #eee;
+      height: 40px;
+      line-height: 40px; }
+      header #nav ul li .first-page {
+        font-size: 14px;
+        display: inline-block;
+        width: 100%;
+        height: 16px;
+        line-height: 16px;
+        background: url(../image/shop/first-page.png) no-repeat;
+        margin-left: 11px;
+        padding-left: 26px; }
+      header #nav ul li .first-page:hover {
+        font-size: 14px;
+        display: inline-block;
+        width: 100%;
+        height: 16px;
+        line-height: 16px;
+        background: url(../image/shop/first-pageh.png) no-repeat;
+        margin-left: 11px;
+        padding-left: 26px; }
+      header #nav ul li .recommend {
+        font-size: 14px;
+        display: inline-block;
+        width: 100%;
+        height: 16px;
+        line-height: 16px;
+        background: url(../image/shop/recommend.png) no-repeat;
+        margin-left: 14px;
+        padding-left: 23px; }
+      header #nav ul li .recommend.active {
+        font-size: 14px;
+        display: inline-block;
+        width: 100%;
+        height: 16px;
+        line-height: 16px;
+        background: url(../image/shop/recommendh.png) no-repeat;
+        margin-left: 14px;
+        padding-left: 23px;
+        color: #ea84ba; }
+      header #nav ul li .store {
+        font-size: 14px;
+        display: inline-block;
+        width: 100%;
+        height: 16px;
+        line-height: 16px;
+        background: url(../image/shop/store.png) no-repeat;
+        margin-left: 12px;
+        padding-left: 26px; }
+      header #nav ul li .store:hover {
+        font-size: 14px;
+        display: inline-block;
+        width: 100%;
+        height: 16px;
+        line-height: 16px;
+        background: url(../image/shop/storeh.png) no-repeat;
+        margin-left: 12px;
+        padding-left: 26px; }
+      header #nav ul li .trend {
+        font-size: 14px;
+        display: inline-block;
+        width: 100%;
+        height: 16px;
+        line-height: 16px;
+        background: url(../image/shop/trend.png) no-repeat;
+        margin-left: 12px;
+        padding-left: 26px; }
+      header #nav ul li .trend.active {
+        font-size: 14px;
+        display: inline-block;
+        width: 100%;
+        height: 16px;
+        line-height: 16px;
+        background: url(../image/shop/trendh.png) no-repeat;
+        margin-left: 12px;
+        padding-left: 26px;
+        color: #ea84ba; }
+      header #nav ul li .creative {
+        font-size: 14px;
+        display: inline-block;
+        width: 100%;
+        height: 16px;
+        line-height: 16px;
+        background: url(../image/shop/creative.png) no-repeat;
+        margin-left: 12px;
+        padding-left: 24px; }
+      header #nav ul li .creative:hover {
+        font-size: 14px;
+        display: inline-block;
+        width: 100%;
+        height: 16px;
+        line-height: 16px;
+        background: url(../image/shop/creativeh.png) no-repeat;
+        margin-left: 12px;
+        padding-left: 24px; }
+      header #nav ul li .diy {
+        font-size: 14px;
+        display: inline-block;
+        width: 100%;
+        height: 16px;
+        line-height: 16px;
+        background: url(../image/shop/diy.png) no-repeat;
+        margin-left: 12px;
+        padding-left: 26px; }
+      header #nav ul li .diy.active {
+        font-size: 14px;
+        display: inline-block;
+        width: 100%;
+        height: 16px;
+        line-height: 16px;
+        background: url(../image/shop/diyh.png) no-repeat;
+        margin-left: 12px;
+        padding-left: 26px;
+        color: #ea84ba; }
+      header #nav ul li .health {
+        font-size: 14px;
+        display: inline-block;
+        width: 100%;
+        height: 16px;
+        line-height: 16px;
+        background: url(../image/shop/health.png) no-repeat;
+        margin-left: 11px;
+        padding-left: 26px; }
+      header #nav ul li .health.active {
+        font-size: 14px;
+        display: inline-block;
+        width: 100%;
+        height: 16px;
+        line-height: 16px;
+        background: url(../image/shop/healthh.png) no-repeat;
+        margin-left: 11px;
+        padding-left: 26px;
+        color: #ea84ba; }
+      header #nav ul li .plan {
+        font-size: 14px;
+        display: inline-block;
+        width: 100%;
+        height: 16px;
+        line-height: 16px;
+        background: url(../image/shop/plan.png) no-repeat;
+        margin-left: 12px;
+        padding-left: 25px; }
+      header #nav ul li .plan:hover {
+        font-size: 14px;
+        display: inline-block;
+        width: 100%;
+        height: 16px;
+        line-height: 16px;
+        background: url(../image/shop/planh.png) no-repeat;
+        margin-left: 12px;
+        padding-left: 25px; }
+    header #nav ul li:hover {
+      border-left: 1px solid #eee; }
+    header #nav ul .page-li {
+      border-top: 1px solid #eee; }
+    header #nav ul .recommend-li, header #nav ul .trend-li, header #nav ul .diy-li, header #nav ul .health-li {
+      position: relative; }
+    header #nav ul .recommend-option, header #nav ul .trend-option, header #nav ul .diy-option, header #nav ul .health-option {
+      display: none;
+      font-size: 14px;
+      position: absolute;
+      z-index: 100;
+      background: #fff;
+      width: 47%;
+      border-left: none;
+      top: -2%;
+      left: 99.5%; }
+      header #nav ul .recommend-option li, header #nav ul .trend-option li, header #nav ul .diy-option li, header #nav ul .health-option li {
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        border-bottom: none;
+        border-left: 1px solid #eee;
+        border-right: 1px solid #eee; }
+      header #nav ul .recommend-option li:first-child, header #nav ul .trend-option li:first-child, header #nav ul .diy-option li:first-child, header #nav ul .health-option li:first-child {
+        border-left: none;
+        border-top: 1px solid #eee; }
+      header #nav ul .recommend-option li:last-child, header #nav ul .trend-option li:last-child, header #nav ul .diy-option li:last-child, header #nav ul .health-option li:last-child {
+        border-bottom: 1px solid #eee; }
+  header #nav .attention {
+    width: 100%; }
+    header #nav .attention a {
+      display: inline-block;
+      width: 21.5%;
+      height: 41px; }
+    header #nav .attention .weibo {
+      background: url(../image/shop/weibo.png) no-repeat;
+      background-size: contain; }
+    header #nav .attention .weibo:hover {
+      background: url(../image/shop/weiboh.png) no-repeat;
+      background-size: contain; }
+    header #nav .attention .weixin {
+      background: url(../image/shop/weixin2.png) no-repeat;
+      background-size: contain;
+      position: relative; }
+    header #nav .attention .weixin:hover {
+      background: url(../image/shop/weixinh.png) no-repeat;
+      background-size: contain; }
+    header #nav .attention .douban {
+      background: url(../image/shop/douban.png) no-repeat;
+      background-size: contain; }
+    header #nav .attention .douban:hover {
+      background: url(../image/shop/doubanh.png) no-repeat;
+      background-size: contain; }
+    header #nav .attention .taobao {
+      background: url(../image/shop/taobao.png) no-repeat;
+      background-size: contain;
+      margin-right: 0;
+      position: relative; }
+    header #nav .attention .taobao:hover {
+      background: url(../image/shop/taobaoh.png) no-repeat;
+      background-size: contain;
+      margin-right: 0; }
+    header #nav .attention img {
+      display: none;
+      position: absolute;
+      top: -165%;
+      cursor: default; }
+    header #nav .attention .wei-img {
+      left: 350%; }
+    header #nav .attention .tao-img {
+      left: 140%; }
+
+section {
+  width: 80.17%;
+  padding: 0; }
+  section .top {
+    width: 100%;
+    border-bottom: 1px dotted #ea84ba; }
+    section .top .t-img {
+      background: url(../image/shop/top.jpg) no-repeat;
+      height: 80px;
+      margin-bottom: 25px; }
+    section .top ul {
+      margin-bottom: 13px; }
+      section .top ul li {
+        float: left; }
+      section .top ul li:nth-child(1), section .top ul li:nth-child(3) {
+        color: #999;
+        margin: 0 5px; }
+      section .top ul li:nth-child(2) {
+        color: #666; }
+      section .top ul li:nth-child(3) img {
+        margin-right: 5px; }
+  section .content {
+    margin-top: 15px; }
+    section .content .content-top {
+      margin-bottom: 25px; }
+      section .content .content-top .list b {
+        font-size: 17px;
+        color: #ea84ba; }
+      section .content .content-top .list span {
+        font-size: 12px;
+        color: #999;
+        margin-left: 10px; }
+      section .content .content-top .share {
+        margin-top: 2px; }
+        section .content .content-top .share .b-more {
+          display: inline-block;
+          position: relative; }
+          section .content .content-top .share .b-more dl {
+            display: none;
+            position: absolute;
+            width: 240px;
+            border: 1px solid #ccc; }
+            section .content .content-top .share .b-more dl dt {
+              height: 25px;
+              background: #f2f2f2;
+              border-bottom: 1px solid #e5e5e5;
+              font-size: 14px;
+              font-weight: bold;
+              line-height: 25px;
+              padding-left: 5px; }
+            section .content .content-top .share .b-more dl .d-middle {
+              background: #fff;
+              border-bottom: 1px solid #e5e5e5; }
+              section .content .content-top .share .b-more dl .d-middle ul {
+                margin-top: 3px;
+                margin-left: 5px;
+                float: left; }
+                section .content .content-top .share .b-more dl .d-middle ul li {
+                  width: 112px;
+                  height: 24px;
+                  margin: 2px 1px; }
+                  section .content .content-top .share .b-more dl .d-middle ul li a {
+                    height: 16px;
+                    line-height: 16px;
+                    margin-top: 4px;
+                    margin-left: 3px; }
+                  section .content .content-top .share .b-more dl .d-middle ul li a:hover {
+                    color: #000; }
+                section .content .content-top .share .b-more dl .d-middle ul li:hover {
+                  background: #f2f2f2;
+                  border: 1px solid #e5e5e5; }
+              section .content .content-top .share .b-more dl .d-middle .d-middle-right {
+                margin-left: 0; }
+              section .content .content-top .share .b-more dl .d-middle .d-weinxin {
+                background: url(../image/shop/share-content.png) 0 0; }
+              section .content .content-top .share .b-more dl .d-middle .d-url {
+                background: url(../image/shop/share-content.png) 0 -28px; }
+              section .content .content-top .share .b-more dl .d-middle .d-friend {
+                background: url(../image/shop/share-content.png) 0 -56px; }
+              section .content .content-top .share .b-more dl .d-middle .d-renren {
+                background: url(../image/shop/share-content.png) 0 -84px; }
+              section .content .content-top .share .b-more dl .d-middle .d-book {
+                background: url(../image/shop/share-content.png) 0 -113px; }
+              section .content .content-top .share .b-more dl .d-middle .d-feixin {
+                background: url(../image/shop/share-content.png) 0 -140px; }
+              section .content .content-top .share .b-more dl .d-middle .d-twitter {
+                background: url(../image/shop/share-content.png) 0 -170px; }
+              section .content .content-top .share .b-more dl .d-middle .d-share {
+                background: url(../image/shop/share-content.png) 0 -197px; }
+              section .content .content-top .share .b-more dl .d-middle .d-weibo {
+                background: url(../image/shop/share-content.png) -112px 0; }
+              section .content .content-top .share .b-more dl .d-middle .d-email {
+                background: url(..image/shop/share-content.png) -112px -31px; }
+              section .content .content-top .share .b-more dl .d-middle .d-zone {
+                background: url(../image/shop/share-content.png) -112px -55px; }
+              section .content .content-top .share .b-more dl .d-middle .d-happy {
+                background: url(../image/shop/share-content.png) -112px -84px; }
+              section .content .content-top .share .b-more dl .d-middle .d-link {
+                background: url(../image/shop/share-content.png) -112px -112px; }
+              section .content .content-top .share .b-more dl .d-middle .d-douban {
+                background: url(../image/shop/share-content.png) -112px -139px; }
+              section .content .content-top .share .b-more dl .d-middle .d-facebook {
+                background: url(../image/shop/share-content.png) -112px -168px; }
+              section .content .content-top .share .b-more dl .d-middle .d-more {
+                background: url(../image/shop/share-content.png) -112px -196px; }
+            section .content .content-top .share .b-more dl .d-bottom {
+              height: 17px;
+              line-height: 17px;
+              background: #f2f2f2; }
+              section .content .content-top .share .b-more dl .d-bottom img {
+                margin-left: 172px; }
+              section .content .content-top .share .b-more dl .d-bottom a {
+                padding-left: 3px; }
+        section .content .content-top .share a {
+          display: inline-block;
+          margin-right: 10px;
+          padding-left: 20px; }
+        section .content .content-top .share .s-qq {
+          background: url(../image/shop/qq-zone.png) no-repeat; }
+        section .content .content-top .share .s-weibo {
+          background: url(../image/shop/weibo2.png) no-repeat; }
+        section .content .content-top .share .s-tencent {
+          background: url(../image/shop/tencent.png) no-repeat; }
+        section .content .content-top .share .s-weixin {
+          background: url(../image/shop/weixin3.png) no-repeat; }
+        section .content .content-top .share .s-more {
+          background: url(../image/shop/more.png) no-repeat; }
+        section .content .content-top .share .s-visit {
+          background: url(../image/shop/visit.png) no-repeat;
+          margin-right: 0;
+          padding-left: 6px;
+          width: 36px;
+          height: 16px; }
+    section .content .ele ul {
+      margin-bottom: 20px; }
+      section .content .ele ul li {
+        margin-top: 14px;
+        margin-right: 1.61%;
+        width: 31.72%;
+        float: left; }
+        section .content .ele ul li div {
+          width: 63.01%;
+          float: right; }
+          section .content .ele ul li div h1 {
+            font-size: 14px;
+            margin-bottom: 5px;
+            margin-top: 3px; }
+          section .content .ele ul li div h2 {
+            overflow: hidden;
+            height: 35px;
+            font-size: 12px;
+            margin-bottom: 5px;
+            color: #bbb;
+            line-height: 17px; }
+          section .content .ele ul li div h3 {
+            font-size: 12px; }
+            section .content .ele ul li div h3 a {
+              color: #ea84ba; }
+        section .content .ele ul li .new, section .content .ele ul li .mix, section .content .ele ul li .vintage, section .content .ele ul li .normocore, section .content .ele ul li .nature, section .content .ele ul li .jp, section .content .ele ul li .originaldesign, section .content .ele ul li .korea, section .content .ele ul li .boyfriend, section .content .ele ul li .child, section .content .ele ul li .hot, section .content .ele ul li .bag, section .content .ele ul li .shoes, section .content .ele ul li .acc, section .content .ele ul li .socks, section .content .ele ul li .hat, section .content .ele ul li .glass, section .content .ele ul li .skincare, section .content .ele ul li .makeup, section .content .ele ul li .underwear, section .content .ele ul li .daigou, section .content .ele ul li .iphone, section .content .ele ul li .garden, section .content .ele ul li .zakka, section .content .ele ul li .gift, section .content .ele ul li .stationery, section .content .ele ul li .homedecor, section .content .ele ul li .toy, section .content .ele ul li .food, section .content .ele ul li .diy {
+          float: left;
+          width: 33.89830508474576%;
+          display: block;
+          float: left;
+          height: 100px;
+          overflow: hidden;
+          background: url(../image/shop/new1.jpg) no-repeat;
+          background-size: contain; }
+        section .content .ele ul li .mix {
+          background: url(../image/shop/mix.jpg) no-repeat;
+          background-size: contain; }
+        section .content .ele ul li .vintage {
+          background: url(../image/shop/vintage.jpg) no-repeat;
+          background-size: contain; }
+        section .content .ele ul li .normocore {
+          background: url(../image/shop/normocore.jpg) no-repeat;
+          background-size: contain; }
+        section .content .ele ul li .nature {
+          background: url(../image/shop/nature.jpg) no-repeat;
+          background-size: contain; }
+        section .content .ele ul li .jp {
+          background: url(../image/shop/jp.jpg) no-repeat;
+          background-size: contain; }
+        section .content .ele ul li .originaldesign {
+          background: url(../image/shop/originaldesign.jpg) no-repeat;
+          background-size: contain; }
+        section .content .ele ul li .korea {
+          background: url(../image/shop/korea.jpg) no-repeat;
+          background-size: contain; }
+        section .content .ele ul li .boyfriend {
+          background: url(../image/shop/boyfriend.jpg) no-repeat;
+          background-size: contain; }
+        section .content .ele ul li .child {
+          background: url(../image/shop/child.jpg) no-repeat;
+          background-size: contain; }
+        section .content .ele ul li .hot {
+          background: url(../image/shop/hot.jpg) no-repeat;
+          background-size: contain; }
+        section .content .ele ul li .bag {
+          background: url(../image/shop/bag.jpg) no-repeat;
+          background-size: contain; }
+        section .content .ele ul li .shoes {
+          background: url(../image/shop/shoes.jpg) no-repeat;
+          background-size: contain; }
+        section .content .ele ul li .acc {
+          background: url(../image/shop/acc.jpg) no-repeat;
+          background-size: contain; }
+        section .content .ele ul li .socks {
+          background: url(../image/shop/socks.jpg) no-repeat;
+          background-size: contain; }
+        section .content .ele ul li .hat {
+          background: url(../image/shop/hat.jpg) no-repeat;
+          background-size: contain; }
+        section .content .ele ul li .glass {
+          background: url(../image/shop/glass.jpg) no-repeat;
+          background-size: contain; }
+        section .content .ele ul li .skincare {
+          background: url(../image/shop/skincare.jpg) no-repeat;
+          background-size: contain; }
+        section .content .ele ul li .makeup {
+          background: url(../image/shop/makeup.jpg) no-repeat;
+          background-size: contain; }
+        section .content .ele ul li .underwear {
+          background: url(../image/shop/underwear.jpg) no-repeat;
+          background-size: contain; }
+        section .content .ele ul li .daigou {
+          background: url(../image/shop/daigou1.jpg) no-repeat;
+          background-size: contain; }
+        section .content .ele ul li .iphone {
+          background: url(../image/shop/iphone.jpg) no-repeat;
+          background-size: contain; }
+        section .content .ele ul li .garden {
+          background: url(../image/shop/garden1.jpg) no-repeat;
+          background-size: contain; }
+        section .content .ele ul li .zakka {
+          background: url(../image/shop/zakka.jpg) no-repeat;
+          background-size: contain; }
+        section .content .ele ul li .gift {
+          background: url(../image/shop/gift.jpg) no-repeat;
+          background-size: contain; }
+        section .content .ele ul li .stationery {
+          background: url(../image/shop/stationery.jpg) no-repeat;
+          background-size: contain; }
+        section .content .ele ul li .homedecor {
+          background: url(../image/shop/homedecor1.jpg) no-repeat;
+          background-size: contain; }
+        section .content .ele ul li .toy {
+          background: url(../image/shop/toy1.jpg) no-repeat;
+          background-size: contain; }
+        section .content .ele ul li .food {
+          background: url(../image/shop/food.jpg) no-repeat;
+          background-size: contain; }
+        section .content .ele ul li .diy {
+          background: url(../image/shop/diy.jpg) no-repeat;
+          background-size: contain; }
+
+footer {
+  width: 95%;
+  margin-left: 30px; }
+  footer .link {
+    border-top: 1px dotted #ea84ba;
+    border-bottom: 1px dotted #ea84ba; }
+    footer .link .link-box {
+      margin: 10px 0 9px 0; }
+      footer .link .link-box span {
+        padding: 7px 16px 7px 0;
+        display: inline-block;
+        color: #999; }
+      footer .link .link-box a {
+        padding: 7px 11px 7px 0;
+        display: inline-block;
+        color: #666; }
+  footer .introduce .introduce-box {
+    margin: 14px 0 14px;
+    text-align: center; }
+    footer .introduce .introduce-box a {
+      padding: 8px 14px;
+      color: #666; }
+  footer .copyrights {
+    text-align: center;
+    margin-bottom: 20px; }
+    footer .copyrights span {
+      margin-right: 5px; }
+    footer .copyrights a, footer .copyrights b, footer .copyrights i {
+      margin-right: 10px; }
+    footer .copyrights span, footer .copyrights b, footer .copyrights i {
+      color: #999; }
+    footer .copyrights a {
+      color: #666; }
+
+@media (max-width: 1024px) {
+  #wrap {
+    background: none; }
+
+  #top-box {
+    margin-left: 0; }
+
+  header {
+    position: static;
+    width: 100%; }
+    header #logo {
+      width: 100%; }
+      header #logo .logo1 {
+        width: 32.75154004106776%;
+        display: block;
+        float: left; }
+      header #logo .logo2 {
+        width: 61.19096509240246%;
+        display: block;
+        float: right; }
+    header #nav ul {
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+      width: 100%;
+      margin-bottom: 20px; }
+      header #nav ul li {
+        float: left;
+        margin-right: 1.9%;
+        border-bottom: none; }
+        header #nav ul li .mediaChange {
+          margin-left: 0; }
+        header #nav ul li .mediaChange:hover {
+          margin-left: 0; }
+        header #nav ul li .recommend.active, header #nav ul li .trend.active, header #nav ul li .diy.active, header #nav ul li .health.active {
+          margin-left: 0; }
+      header #nav ul li:hover {
+        border-left: none; }
+      header #nav ul .page-li {
+        border-top: none; }
+      header #nav ul .recommend-option, header #nav ul .trend-option, header #nav ul .diy-option, header #nav ul .health-option {
+        background: #fff;
+        width: 150%;
+        top: 100%;
+        border: 1px solid #eee;
+        border-top: 1px solid #fff;
+        left: -16px; }
+        header #nav ul .recommend-option li, header #nav ul .trend-option li, header #nav ul .diy-option li, header #nav ul .health-option li {
+          height: 40px;
+          line-height: 40px;
+          text-align: center;
+          border-bottom: none;
+          border-left: none;
+          border-right: none; }
+          header #nav ul .recommend-option li a, header #nav ul .trend-option li a, header #nav ul .diy-option li a, header #nav ul .health-option li a {
+            padding-left: 35px; }
+          header #nav ul .recommend-option li a:last-child, header #nav ul .trend-option li a:last-child, header #nav ul .diy-option li a:last-child, header #nav ul .health-option li a:last-child {
+            padding-left: 15px; }
+        header #nav ul .recommend-option li:first-child, header #nav ul .trend-option li:first-child, header #nav ul .diy-option li:first-child, header #nav ul .health-option li:first-child {
+          border-top: none; }
+        header #nav ul .recommend-option li:last-child, header #nav ul .trend-option li:last-child, header #nav ul .diy-option li:last-child, header #nav ul .health-option li:last-child {
+          border-bottom: none; }
+    header #nav .attention {
+      display: none; }
+
+  section {
+    width: 100%; }
+    section .top .t-img {
+      display: none; }
+
+  footer {
+    margin-left: 0; } }
+@media (max-width: 881px) {
+  header {
+    width: 100%; }
+    header #nav ul {
+      width: 100%; }
+      header #nav ul li {
+        margin-right: 2.45%;
+        float: left; }
+        header #nav ul li .mediaChange {
+          background: none;
+          padding-left: 0; }
+        header #nav ul li .mediaChange:hover {
+          background: none;
+          padding-left: 0; }
+        header #nav ul li .recommend.active, header #nav ul li .trend.active, header #nav ul li .diy.active, header #nav ul li .health.active {
+          background: none;
+          padding-left: 0; }
+      header #nav ul .page-li {
+        border-top: none; }
+      header #nav ul .recommend-option, header #nav ul .trend-option, header #nav ul .diy-option, header #nav ul .health-option {
+        width: 180%;
+        left: -40%; }
+    header #nav .attention {
+      display: none; }
+
+  section {
+    width: 100%; }
+    section .top .t-img {
+      display: none; } }
+@media (max-width: 640px) {
+  #collapse .toggle {
+    right: 0;
+    display: block; }
+
+  header {
+    width: 100%; }
+    header #logo {
+      width: 100%; }
+    header #nav {
+      display: none; }
+
+  section .top .t-img {
+    display: none; }
+  section .content .ele ul li {
+    width: 75%; }
+
+  footer .introduce .introduce-box a {
+    color: #fff;
+    background: #ea84ba; } }
+
+/*# sourceMappingURL=shop.css.map */

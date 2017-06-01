@@ -1,0 +1,817 @@
+@import "mixin.scss";
+body{
+	font-family: 微软雅黑;
+}
+#wrap{
+	background:url(../image/brand/bg.png);
+	width:100%;
+	// height:1545px;
+}
+//设置整体
+#box{
+	width: 90%;
+ 	// margin-left: 65px;
+ 	background: #fff;
+ 	// overflow:hidden;
+ 	margin:0 auto;
+}
+//设置上边盒子
+#top-box{
+	width:95%;
+	margin:0 auto;
+	padding-top:20px;
+	// margin-left:30px;
+
+}
+//设置按钮
+#collapse{
+	z-index:9999;
+	position: fixed;
+	right:0;
+	.toggle{
+		display:none;
+		width: 40px;
+		height: 39px;
+		background: #ea84ba;
+		position: absolute;
+		top: 55px;
+		left:-40px;
+		cursor: pointer;
+		opacity: 0.9;
+		ul{
+			margin-top:10px;
+			margin-left:9px;
+			li{
+				width: 22px;
+				height: 3px;
+				margin-bottom: 5px;
+				background: #fff;
+			}
+		}
+		
+	}
+	.collapse-nav{
+		display:none;
+		width:284.5px;
+		height: 528px;
+    	background: #ea84ba;
+    	opacity: 0.9;
+    	ul{
+    		margin:0 8%;
+    		li{
+    			border-bottom:1px solid #fff;
+    			height:52px;
+    			line-height:52px;
+    			font-size:16px;
+    			a{
+    				color:#fff;
+    			}
+    		}
+    	}
+	}
+}
+
+
+//设置左边标题
+header{
+	position:fixed;
+	width:15.15%;
+	#logo{
+		.logo1{
+			display:block;
+			margin-bottom:10px;
+			img{
+				width:100%;
+			}
+		}
+		.logo2{
+			display:block;
+			margin-bottom:20px;
+			img{
+				width:100%;
+			}
+		}
+	}
+	#nav{
+		ul{
+			margin-bottom:20px;
+			li{
+				border-bottom:1px solid #eee;
+				height:40px;
+				line-height:40px;
+				// navBg ($width,$url,$left,$pLeft)
+				.first-page{
+					@include navBg(url(../image/brand/first-page.png) no-repeat,11px,26px);
+				}
+				.first-page:hover{
+					@include navBg(url(../image/brand/first-pageh.png) no-repeat,11px,26px);
+				}
+				.recommend{
+					@include navBg(url(../image/brand/recommend.png) no-repeat,14px,23px);
+				}
+				.recommend.active{
+					@include navBg(url(../image/brand/recommendh.png) no-repeat,14px,23px);
+					color:#ea84ba;
+				}
+				.store{
+					@include navBg(url(../image/brand/store.png) no-repeat,12px,26px);
+				}
+				.store:hover{
+					@include navBg(url(../image/brand/storeh.png) no-repeat,12px,26px);
+				}
+				.trend{
+					@include navBg(url(../image/brand/trend.png) no-repeat,12px,26px);
+				}
+				.trend.active{
+					@include navBg(url(../image/brand/trendh.png) no-repeat,12px,26px);
+					color:#ea84ba;
+				}
+				.creative{
+					@include navBg(url(../image/brand/creative.png) no-repeat,12px,24px);
+				}
+				.creative:hover{
+					@include navBg(url(../image/brand/creativeh.png) no-repeat,12px,24px);
+				}
+				.diy{
+					@include navBg(url(../image/brand/diy.png) no-repeat,12px,26px);
+				}
+				.diy.active{
+					@include navBg(url(../image/brand/diyh.png) no-repeat,12px,26px);
+					color:#ea84ba;
+				}
+				.health{
+					@include navBg(url(../image/brand/health.png) no-repeat,11px,26px);
+				}
+				.health.active{
+					@include navBg(url(../image/brand/healthh.png) no-repeat,11px,26px);
+					color:#ea84ba;
+				}
+				.plan{
+					@include navBg(url(../image/brand/plan.png) no-repeat,12px,25px);
+				}
+				.plan:hover{
+					@include navBg(url(../image/brand/planh.png) no-repeat,12px,25px);
+				}
+			}
+			li:hover{
+				border-left:1px solid #eee;
+			}
+			.page-li{
+				border-top:1px solid #eee;
+			}
+			.recommend-li,.trend-li,.diy-li,.health-li{
+				position:relative;
+			}
+			// 选项卡
+			.recommend-option{
+				display:none;
+				font-size:14px;
+				position:absolute;
+				z-index:100;
+				// border:1px solid #eee;
+				background:#fff;
+				width: 47%;
+    			border-left: none;
+    			top:-2%;
+   				left:99.5%;
+   			
+				li{
+					height:40px;
+					line-height:40px;
+					text-align:center;
+					border-bottom:none;
+					border-left:1px solid #eee;
+					border-right:1px solid #eee;
+				}
+				li:first-child{
+   					border-left:none;
+   					border-top:1px solid #eee;
+   				}
+   				li:last-child{
+   					border-bottom:1px solid #eee;
+   				}
+			}
+			.trend-option{
+				@extend .recommend-option;
+			}
+			.diy-option{
+				@extend .recommend-option;
+			}
+			.health-option{
+				@extend .recommend-option;
+			}
+		}
+		.attention{
+			width:100%;
+			a{
+				display:inline-block;
+				width:21.5%;
+				height:41px;
+			}
+			.weibo{
+				background:url(../image/brand/weibo.png) no-repeat;
+				background-size:contain;
+			}
+			.weibo:hover{
+				background:url(../image/brand/weiboh.png) no-repeat;
+				background-size:contain;
+			}
+			.weixin{
+				background:url(../image/brand/weixin2.png) no-repeat;
+				background-size:contain;
+				position:relative;
+			}
+			.weixin:hover{
+				background:url(../image/brand/weixinh.png) no-repeat;
+				background-size:contain;
+			}
+			.douban{
+				background:url(../image/brand/douban.png) no-repeat;
+				background-size:contain;
+			}
+			.douban:hover{
+				background:url(../image/brand/doubanh.png) no-repeat;
+				background-size:contain;
+			}
+			.taobao{
+				background:url(../image/brand/taobao.png) no-repeat;
+				background-size:contain;
+				margin-right:0;
+				position:relative;
+			}
+			.taobao:hover{
+				background:url(../image/brand/taobaoh.png) no-repeat;
+				background-size:contain;
+				margin-right:0;
+			}
+
+			//选项卡
+			img{
+				display:none;
+				position:absolute;
+				top:-165%;
+				cursor:default;
+			}
+			.wei-img{
+				left:350%;
+				
+			}
+			.tao-img{
+				left:140%;
+			}
+			
+		}
+	} 
+
+
+}
+
+//设置右边内容
+section{
+	width:80.17%;
+	padding:0;
+	.top{
+		width:100%;
+		border-bottom:1px dotted #ea84ba;
+		.t-img{
+			background:url(../image/brand/top.jpg) no-repeat;
+			height:80px;
+			margin-bottom:25px;
+		}
+		ul{
+			margin-bottom:13px;
+			li{
+				float:left;
+			}
+			li:nth-child(1),li:nth-child(3){
+				color:#999;
+				margin:0 5px;
+			}
+			li:nth-child(2){
+				color:#666;
+			}
+			li:nth-child(3){
+				img{
+					margin-right:5px;
+				}
+			}
+		}
+	}
+	.content{
+		margin-top:15px;
+		.content-top{
+			margin-bottom:25px;
+			.list{
+				b{
+					font-size:17px;
+					color:#ea84ba;
+				}
+				span{
+					font-size:12px;
+					color:#999;
+					margin-left:10px;
+				}
+			}
+			.share{
+				margin-top: 2px;
+				.b-more{
+					display:inline-block;
+					position:relative;
+					dl{
+						display:none;
+						position:absolute;
+						// height:270px;
+						width:240px;
+						border:1px solid #ccc;
+						dt{
+							height:25px;
+							background:#f2f2f2;
+							border-bottom:1px solid #e5e5e5;
+							font-size:14px;
+							font-weight:bold;
+							line-height:25px;
+							padding-left:5px;
+						}
+						.d-middle{
+							background:#fff;
+							border-bottom:1px solid #e5e5e5;
+							ul{
+								margin-top:3px;
+								margin-left:5px;
+								float:left;
+								li{
+									width:112px;
+									height:24px;
+									margin:2px 1px;
+								
+									a{
+										height:16px;
+										line-height:16px;
+										margin-top:4px;
+										margin-left:3px;
+									}
+									a:hover{
+										color:#000;
+									}
+								}
+								li:hover{
+									background:#f2f2f2;
+									border:1px solid #e5e5e5;
+								}
+							}
+							.d-middle-right{
+								margin-left:0;
+							}
+							.d-weinxin{
+								background:url(../image/brand/share-content.png) 0 0;
+							}
+							.d-url{
+								background:url(../image/brand/share-content.png) 0 -28px;
+							}
+							.d-friend{
+								background:url(../image/brand/share-content.png) 0 -56px;
+							}
+							.d-renren{
+								background:url(../image/brand/share-content.png) 0 -84px;
+							}
+							.d-book{
+								background:url(../image/brand/share-content.png) 0 -113px;
+							}
+							.d-feixin{
+								background:url(../image/brand/share-content.png) 0 -140px;
+							}
+							.d-twitter{
+								background:url(../image/brand/share-content.png) 0 -170px;
+							}
+							.d-share{
+								background:url(../image/brand/share-content.png) 0 -197px;
+							}
+							.d-weibo{
+								background:url(../image/brand/share-content.png) -112px 0;
+							}
+							.d-email{
+								background:url(../image/brand/share-content.png) -112px -31px;
+							}
+							.d-zone{
+								background:url(../image/brand/share-content.png) -112px -55px;
+							}
+							.d-happy{
+								background:url(../image/brand/share-content.png) -112px -84px;
+							}
+							.d-link{
+								background:url(../image/brand/share-content.png) -112px -112px;
+							}
+							.d-douban{
+								background:url(../image/brand/share-content.png) -112px -139px;
+							}
+							.d-facebook{
+								background:url(../image/brand/share-content.png) -112px -168px;
+							}
+							.d-more{
+								background:url(../image/brand/share-content.png) -112px -196px;
+							}
+						}
+						.d-bottom{
+							height:17px;
+							line-height:17px;
+							background:#f2f2f2;
+							img{
+								margin-left:172px;
+							}
+							a{
+								padding-left:3px;
+							}
+						}
+					}
+				}
+				a{
+					display:inline-block;
+					margin-right:10px;
+					padding-left:20px;
+				}
+				.s-qq{
+					background:url(../image/brand/qq-zone.png) no-repeat;
+				}
+				.s-weibo{
+					background:url(../image/brand/weibo2.png) no-repeat;
+				}
+				.s-tencent{
+					background:url(../image/brand/tencent.png) no-repeat;
+				}
+				.s-weixin{
+					background:url(../image/brand/weixin3.png) no-repeat;
+				}
+				.s-more{
+					background:url(../image/brand/more.png) no-repeat;
+				}
+				.s-visit{
+					background:url(../image/brand/visit.png) no-repeat;
+					margin-right:0;
+					padding-left:6px;
+					width:36px;
+					height:16px;
+				}
+			}
+		}
+		
+		.ele{
+			margin-bottom:20px;
+			span{
+				font-size:16px;
+				color:#666;
+			}
+			ul{
+				margin-bottom:20px;
+				li{
+					margin-top: 14px;
+					margin-right: 1.61%;
+					width: 31.72%;
+					float:left;
+					div{
+						width:63.01%;
+						float:right;
+						h1{
+							font-size:14px;
+							margin-bottom:5px;
+							margin-top:3px;
+						}
+						h2{
+							overflow:hidden;
+							height:35px;
+							font-size:12px;
+							margin-bottom:5px;
+							color:#bbb;
+							line-height:17px;
+						}
+						h3{
+							font-size:12px;
+							a{
+								color:#ea84ba;
+							}
+						}
+					}
+					.beijing{
+						float:left;
+						width:33.89830508474576%;
+						display:block;
+						float:left;
+						height:100px;
+						overflow:hidden;
+						background:url(../image/brand/mycitybeijing.jpg) no-repeat;
+						background-size:contain;
+					}
+					.shanghai{
+						@extend .beijing;
+						background:url(../image/brand/shanghai1.jpg) no-repeat;
+						background-size:contain;
+					}
+					.guangzhou{
+						@extend .beijing;
+						background:url(../image/brand/guangzhou.jpg) no-repeat;
+						background-size:contain;
+					}
+					.fujian{
+						@extend .beijing;
+						background:url(../image/brand/xiamen.jpg) no-repeat;
+						background-size:contain;
+					}
+					.shenzhen{
+						@extend .beijing;
+						background:url(../image/brand/shenzhen.jpg) no-repeat;
+						background-size:contain;
+					}
+					.wuhan{
+						@extend .beijing;
+						background:url(../image/brand/wuhan.jpg) no-repeat;
+						background-size:contain;
+					}
+					.womanlogo{
+						@extend .beijing;
+						background:url(../image/brand/womanlogo.jpg) no-repeat;
+						background-size:contain;
+					}
+					.womanlogo2{
+						@extend .beijing;
+						background:url(../image/brand/womanlogo2.jpg) no-repeat;
+						background-size:contain;
+					}
+					.nanzhuang{
+						@extend .beijing;
+						background:url(../image/brand/nanzhuang.jpg) no-repeat;
+						background-size:contain;
+					}
+					.peishi{
+						@extend .beijing;
+						background:url(../image/brand/peishi.jpg) no-repeat;
+						background-size:contain;
+					}
+					.shenghuo{
+						@extend .beijing;
+						background:url(../image/brand/shenghuo.jpg) no-repeat;
+						background-size:contain;
+					}
+					.paperlogo{
+						@extend .beijing;
+						background:url(../image/brand/paperlogo.jpg) no-repeat;
+						background-size:contain;
+					}
+					.childlogo{
+						@extend .beijing;
+						background:url(../image/brand/childlogo.jpg) no-repeat;
+						background-size:contain;
+					}
+					.skincare{
+						@extend .beijing;
+						background:url(../image/brand/skincare.jpg) no-repeat;
+						background-size:contain;
+					}
+					.bridelogo{
+						@extend .beijing;
+						background:url(../image/brand/bridelogo.jpg) no-repeat;
+						background-size:contain;
+					}
+				}
+			}
+			ul:nth-child(2){
+				margin-bottom:20px;
+			}
+		}
+	}
+}
+
+//设置底部
+footer{
+	width:95%;
+	margin-left:30px;
+	padding-bottom:20px;
+	// width:1157px;
+	.link{
+		border-top:1px dotted #ea84ba;
+		border-bottom:1px dotted #ea84ba;
+		.link-box{
+			margin:10px 0 9px 0;
+			span{
+				padding:7px 16px 7px 0;
+				display:inline-block;
+				color:#999;
+			}
+			a{
+				padding:7px 11px 7px 0;
+				display:inline-block;
+				color:#666;
+			}
+		}
+	
+	}
+	.introduce{
+		.introduce-box{
+			margin:14px 0 14px;
+			text-align:center;
+			a{
+				padding:8px 14px;
+				color:#666;
+			}
+		}
+	}
+	.copyrights{
+		text-align:center;
+		
+		span{
+			margin-right:5px;
+		}
+		a,b,i{
+			margin-right:10px;
+		}
+		span,b,i{
+			color:#999;
+		}
+		a{
+			color:#666;
+		}
+		
+	}
+}
+//媒体查询
+@media (max-width:1024px) {
+	#wrap{
+		background:none;
+	}
+	#top-box{
+		margin-left:0;
+	}
+
+	header{
+		position:static;
+		width:100%;
+		#logo{
+			width:100%;
+			.logo1{
+				width:32.75154004106776%;
+				display:block;
+				float:left;
+			}
+			.logo2{
+				width: 61.19096509240246%;
+				display:block;
+				float:right;
+			}
+		}
+		#nav{
+			ul{
+				border-top:1px solid #eee;
+				border-bottom:1px solid #eee;
+				width:100%;
+				margin-bottom:20px;
+				li{
+					float:left;
+					margin-right:1.9%;
+					border-bottom:none;
+					.mediaChange{
+						margin-left:0;
+					}
+					.mediaChange:hover{
+						margin-left:0;
+					}
+					.recommend.active,.trend.active,.diy.active,.health.active{
+						margin-left:0;
+					}
+				}
+				li:hover{
+					border-left:none;
+				}
+				.page-li{
+					border-top:none;
+				}
+				// 选项卡
+				.recommend-option{
+					// display:none;
+					background:#fff;
+					width: 100%;
+	    			top:100%;
+	    			border:1px solid #eee;
+	    			border-top:1px solid #fff;
+	   				left:-2%;
+	   			
+					li{
+						height:40px;
+						line-height:40px;
+						text-align:center;
+						border-bottom:none;
+						border-left:none;
+						border-right:none;
+						
+						a{
+							padding-left:11px;
+						}
+						a:last-child{
+							padding-left:15px;
+						}
+					}
+					li:first-child{
+	   					border-top:none;
+	   				}
+	   				li:last-child{
+	   					border-bottom:none;
+	   				}
+				}
+			}
+			.attention{
+				display:none;
+			}
+		}
+	} 
+	section{
+		width:100%;
+		.top{
+			.t-img{
+				display:none;
+			}
+		}
+	}
+	footer{
+		margin-left:0;
+	}
+}
+@media (max-width:881px){
+	header{
+		width:100%;
+		#nav{
+			ul{
+				width:100%;
+				li{
+					margin-right: 2.45%;
+					float:left;
+					.mediaChange{
+						background:none;
+						padding-left:0;
+					}
+					.mediaChange:hover{
+						background:none;
+						padding-left:0;
+					}
+					.recommend.active,.trend.active,.diy.active,.health.active{
+						background:none;
+						padding-left:0;
+					}
+				}
+				.page-li{
+					border-top:none;
+				}
+			}
+			.attention{
+				display:none;
+			}
+		}
+	} 
+	section{
+		width:100%;
+		.top{
+			.t-img{
+				display:none;
+			}
+		}
+	}
+}
+@media (max-width:640px){
+	#collapse{
+		.toggle{
+			right:0;
+			display:block;
+		}
+	}
+	header{
+		width:100%;
+		#logo{
+			width:100%;
+		}
+		#nav{
+			display:none;
+		}
+	} 
+	section{
+		.top{
+			.t-img{
+				display:none;
+			}
+		}
+		.content{
+			.ele{
+				ul{
+					li{
+						width:75%;
+					}
+				}
+			}
+		}
+	}
+	footer{
+		.introduce{
+			.introduce-box{
+				a{
+					color:#fff;
+					background:#ea84ba;
+				}
+			}
+		}
+	}
+}
